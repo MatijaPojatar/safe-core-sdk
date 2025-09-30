@@ -22,6 +22,7 @@ export const networks: NetworkShortName[] = [
   { chainId: 8453n, shortName: 'base' },
   { chainId: 10200n, shortName: 'chi' },
   { chainId: 42161n, shortName: 'arb1' },
+  { chainId: 9745n, shortName: 'plasma' },
   { chainId: 43111n, shortName: 'hemi' },
   { chainId: 57073n, shortName: 'ink' },
   { chainId: 80094n, shortName: 'berachain' },
