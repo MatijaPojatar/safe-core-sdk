@@ -1963,11 +1963,11 @@
   integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
 "@safe-global/api-kit@^4.0.0":
-  version "4.0.3"
+  version "4.0.4"
   resolved "file:packages/api-kit"
   dependencies:
     "@safe-global/protocol-kit" "^6.1.1"
-    "@safe-global/types-kit" "^3.0.0"
+    matija-safe-types-kit "^3.0.1"
     node-fetch "^2.7.0"
     viem "^2.21.8"
 
@@ -6675,15 +6675,15 @@ math-intrinsics@^1.1.0:
   integrity sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==
 
 "matija-safe-api-kit@file:C:\\github\\safe\\safe-core-sdk\\packages\\api-kit":
-  version "4.0.3"
+  version "4.0.4"
   resolved "file:packages/api-kit"
   dependencies:
     "@safe-global/protocol-kit" "^6.1.1"
-    "@safe-global/types-kit" "^3.0.0"
+    matija-safe-types-kit "^3.0.1"
     node-fetch "^2.7.0"
     viem "^2.21.8"
 
-"matija-safe-types-kit@file:C:\\github\\safe\\safe-core-sdk\\packages\\types-kit":
+matija-safe-types-kit@^3.0.1, "matija-safe-types-kit@file:C:\\github\\safe\\safe-core-sdk\\packages\\types-kit":
   version "3.0.1"
   resolved "file:packages/types-kit"
   dependencies:
