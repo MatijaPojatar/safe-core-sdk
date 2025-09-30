@@ -4,7 +4,26 @@ import {
   ExtractAbiFunction,
   ExtractAbiFunctionNames
 } from 'abitype'
-import { SafeVersion, TransactionOptions, TransactionResult } from '@safe-global/types-kit/types'
+
+export interface BaseTransactionResult {
+  hash: string
+}
+
+export interface TransactionResult extends BaseTransactionResult {
+  transactionResponse: unknown
+  options?: TransactionOptions
+}
+
+export interface TransactionOptions {
+  from?: string
+  gasLimit?: number | string | bigint
+  gasPrice?: number | string
+  maxFeePerGas?: number | string
+  maxPriorityFeePerGas?: number | string
+  nonce?: number
+}
+
+export type SafeVersion = '1.4.1' | '1.3.0' | '1.2.0' | '1.1.1' | '1.0.0'
 
 /**
  * Extracts the names of read-only functions (view or pure) from a given contract ABI.

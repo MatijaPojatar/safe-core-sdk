@@ -1,6 +1,6 @@
-export { type Hex } from 'viem'
+import { TransactionOptions } from './contracts/common/BaseContract'
 
-export type SafeVersion = '1.4.1' | '1.3.0' | '1.2.0' | '1.1.1' | '1.0.0'
+export { type Hex } from 'viem'
 
 export enum OperationType {
   Call, // 0
@@ -73,24 +73,6 @@ export interface TransactionBase {
   to: string
   value: string
   data: string
-}
-
-export interface TransactionOptions {
-  from?: string
-  gasLimit?: number | string | bigint
-  gasPrice?: number | string
-  maxFeePerGas?: number | string
-  maxPriorityFeePerGas?: number | string
-  nonce?: number
-}
-
-export interface BaseTransactionResult {
-  hash: string
-}
-
-export interface TransactionResult extends BaseTransactionResult {
-  transactionResponse: unknown
-  options?: TransactionOptions
 }
 
 export interface Eip3770Address {
